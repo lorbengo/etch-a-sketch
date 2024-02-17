@@ -8,15 +8,29 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
 .grid-wrap {
   width: min-content;
+  margin: 0 auto;
+}
+
+.grid-wrap button {
+  display: block;
+  margin-left: auto;
 }
 
 .grid {
   display: flex;
   flex-wrap: wrap;
-  width: 257px;
-  height: 257px;
+  width: 641px;
+  height: 641px;
   border-top: 1px solid black;
   border-left: 1px solid black;
 }
