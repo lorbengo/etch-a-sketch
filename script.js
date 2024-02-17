@@ -21,12 +21,23 @@ function gridGenerator(numberSquares = 16) {
 
 function changeBackgroundColorCells(event) {
   if (event.altKey) {
-    event.target.style.backgroundColor = "black";
+    if (event.target.id !== "grid") {
+      event.target.style.backgroundColor = randomRGB();
+    }
   }
 }
 
 function changeBackgroundColorCell(event) {
-  event.target.style.backgroundColor = "black";
+  if (event.target.id !== "grid") {
+    event.target.style.backgroundColor = randomRGB();
+  }
+}
+
+function randomRGB() {
+  const red = Math.round(Math.random() * 256);
+  const green = Math.round(Math.random() * 256);
+  const blue = Math.round(Math.random() * 256);
+  return `rgb(${red}, ${green}, ${blue})`;
 }
 
 function gridRegenerator() {
