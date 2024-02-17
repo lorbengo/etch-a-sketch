@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  width: 257px;
+  height: 257px;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+}
