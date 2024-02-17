@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
 }
 
+.grid-wrap {
+  width: min-content;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -15,4 +19,9 @@ html {
   height: 257px;
   border-top: 1px solid black;
   border-left: 1px solid black;
+}
+
+.grid > div {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
 }
